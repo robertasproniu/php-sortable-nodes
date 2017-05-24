@@ -5,7 +5,6 @@
  * Date: 23/05/2017
  * Time: 21:35
  */
-declare(strict_types=1);
 
 namespace NodeSetCollection;
 
@@ -71,11 +70,6 @@ class NodeCollection extends CollectionFactory
             {
                 throw new Exception("Invalid format for node '{$string}{$delimiter}{$number}' located at index {$index}");
             }
-
-            // set right types
-            settype($string, 'string');
-
-            settype($number, 'int');
 
             // add to node
             $parsedNodes[$node] = $this->node($string, $number);

@@ -1,0 +1,11 @@
+{
+    "require": {
+        "php" : "^7.0",
+        "robertasproniu/php-sortable-collections": "dev-master"
+    },
+    "autoload" : {
+        "classmap" : [
+            "app/"
+        ]
+    }
+}

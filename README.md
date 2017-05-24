@@ -2,15 +2,18 @@
 
 Example app of creating, merging and sorting a collection with alphanum ids items
 
-**requirements**
-``php >= 7.0``
----
-**to install**
-````php
-composer install
+**Requirements**
+
+````
+composer
+php >= 7.0
 ````
 
-**to run**
-````php
-php run.php
-````
+---
+**Install**
+
+Type in CLI the following command `` composer install``
+
+**Run**
+
+Type in CLI the following command ``php run.php``

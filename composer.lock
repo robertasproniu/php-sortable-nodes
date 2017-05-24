@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f9c6b0324d70ccd96bc95b4a77d8f47c",
+    "packages": [
+        {
+            "name": "robertasproniu/php-sortable-collections",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robertasproniu/php-sortable-collections.git",
+                "reference": "98d6979b3e2973d5767e78e411c250ec5c6b01f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robertasproniu/php-sortable-collections/zipball/98d6979b3e2973d5767e78e411c250ec5c6b01f1",
+                "reference": "98d6979b3e2973d5767e78e411c250ec5c6b01f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SortableCollection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Asproniu",
+                    "email": "robert.asproniu.work@gmail.com"
+                }
+            ],
+            "description": "sortable collections of items",
+            "time": "2017-05-24 06:38:06"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "robertasproniu/php-sortable-collections": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.0"
+    },
+    "platform-dev": []
+}

@@ -11,11 +11,11 @@ namespace NodeSetCollection;
 
 
 use Exception;
+use Throwable;
 use SortableCollection\Collection\Collection;
 use SortableCollection\CollectionFactory;
 use SortableCollection\Contracts\Collection\CollectionInterface;
 use NodeSetCollection\Models\Node;
-use Throwable;
 
 class NodeCollection extends CollectionFactory
 {
@@ -60,7 +60,6 @@ class NodeCollection extends CollectionFactory
         {
             $params = explode($delimiter, $node);
 
-            // trow if size not match match
             if (count($params) < 2)
             {
                 throw new Exception("Invalid node on index '{$index}'");
@@ -68,7 +67,6 @@ class NodeCollection extends CollectionFactory
 
             list($string, $number) = $params;
 
-            // throw exception for bad type of values
             if (!is_string($string) || !is_numeric($number))
             {
                 throw new Exception("Invalid format for node '{$string}{$delimiter}{$number}' located at index {$index}");

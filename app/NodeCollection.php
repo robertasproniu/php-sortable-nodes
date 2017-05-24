@@ -55,7 +55,9 @@ class NodeCollection extends CollectionFactory
     {
         $parsedNodes = [];
 
-        foreach ((array) preg_split('/[\s,]+/', $nodes) as $index => $node)
+        $nodes = (array) preg_split('/[\s,]+/', $nodes);
+
+        foreach ($nodes as $index => $node)
         {
             $params = explode($delimiter, $node);
 
